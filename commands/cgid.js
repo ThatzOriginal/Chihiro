@@ -9,7 +9,8 @@ module.exports = {
 	cooldown: 5,
 	execute(message, args) {
 
-                var cgidnum = (args[0]);
+                const cgidnum = (args[0]);
+                console.log(cgidnum);
                 //if (cgidnum == !NaN)
                 //{
                 console.log('CG ran');
@@ -23,10 +24,10 @@ module.exports = {
                 //console.log(attachment);
                 message.channel.send(adr+'/large.png');
                 //}
-                /*else
-                {
-                message.reply('Your input was not a valid ID');
-                }*/
+                //else
+                //{
+                //message.reply('Your input was not a valid ID');
+                //}
                 
                 /*
                 const exampleEmbed = new Discord.MessageEmbed()
