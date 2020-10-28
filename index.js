@@ -25,7 +25,7 @@ client.once('ready', () => {
 	client.user.setActivity('Chihiro Bot v0.2');
 });
 
-client.on('message', message => {
+client.on('message', async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).split(/ +/);
