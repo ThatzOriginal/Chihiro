@@ -2,6 +2,8 @@ const fetch = require('node-fetch');
 const querystring = require('querystring');
 const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
+const SQLite = require("better-sqlite3");
+const sql = new SQLite('./scores.sqlite');
 
 
 module.exports = {
